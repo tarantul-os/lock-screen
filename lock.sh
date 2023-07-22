@@ -1,11 +1,6 @@
 #!/bin/bash
 
-BLANK='#434c5e'
-CLEAR='#2e3440'
-DEFAULT='#2e3440'
-TEXT='#eceff4'
-WRONG='#bf616a'
-VERIFYING='#a3be8c'
+source colors.sh
 
 i3lock \
 --insidever-color=$CLEAR     \
@@ -14,9 +9,9 @@ i3lock \
 --insidewrong-color=$CLEAR   \
 --ringwrong-color=$WRONG     \
 \
---inside-color=$BLANK        \
+--inside-color=$INNER        \
 --ring-color=$DEFAULT        \
---line-color=$BLANK          \
+--line-color=$INNER          \
 --separator-color=$DEFAULT   \
 \
 --verif-color=$TEXT          \
